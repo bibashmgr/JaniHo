@@ -1,3 +1,3 @@
-# Jamna Ho
+### Jani Ho?
 
-a website for booking buses to travel around Nepal.
+A website for booking buses to travel around Nepal.
