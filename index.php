@@ -1,5 +1,5 @@
 <?php 
-    include './path.php';
+    include ('./path.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
     <title>Home | Jani Ho?</title>
 
     <!-- Custom Styling -->
+    <link rel="stylesheet" href="./styles/header.css?v=<?php echo time();?>" />
     <link rel="stylesheet" href="./styles/index.css?v=<?php echo time();?>" />
 
 </head>
@@ -22,32 +23,16 @@
 <body>
 
     <!-- header & nav-bar -->
-    <header>
-        <div class="logo-container">
-            <a href="<?php echo BASE_URL . '/index.php';?>"><img src="./images/logo.png" alt="logo" id="logo" /></a>
-        </div>
-        <nav class="nav-links-container">
-            <ul class="nav-links">
-                <li><a href="<?php echo BASE_URL . '/index.php';?>" class="nav-link">Home</a></li>
-                <li><a href="" class="nav-link">About</a></li>
-                <li><a href="" class="nav-link">Contact</a></li>
-                <li><a href="" class="nav-link">Gallery</a></li>
-                <li><a href="" class="nav-link">More</a></li>
-            </ul>
-        </nav>
-        <div class="login-container">
-            <a href="<?php echo BASE_URL . '/sighup.php';?>"><img src="./images/login.svg" alt="login" id="login"></a>
-        </div>
-    </header>
+    <?php include(ROOT_PATH . '/includes/header.php') ?>
 
     <!-- section: search-container -->
     <section class="search-container">
-        <form action="" id="form-search" method="POST">
+        <form action="./result.php" id="form-search" method="POST">
             <table class="search-box">
                 <tr>
                     <td class="input-from">
-                        <label for="from">From:</label>
-                        <select name="from" id="select-from" onchange="checkValueFirst()" required>
+                        <label for="location">From:</label>
+                        <select name="location" id="select-from" onchange="checkValueFirst()" required>
                             <option hidden></option>
                             <option value="Pokhara" id="opt-a-one">Pokhara</option>
                             <option value="Kathmandu" id="opt-a-two">Kathmandu</option>
@@ -56,8 +41,8 @@
                         </select>
                     </td>
                     <td class="input-to">
-                        <label for="from">To:</label>
-                        <select name="to" id="select-to" onchange="checkValueSecond()" required>
+                        <label for="destination">To:</label>
+                        <select name="destination" id="select-to" onchange="checkValueSecond()" required>
                             <option hidden></option>
                             <option value="Pokhara" id="opt-b-one">Pokhara</option>
                             <option value="Kathmandu" id="opt-b-two">Kathmandu</option>
@@ -66,7 +51,7 @@
                         </select>
                     </td>
                     <td class="input-date">
-                        <label for="from">Date:</label>
+                        <label for="date">Date:</label>
                         <input type="date" name="date" id="type-date" required />
                     </td>
                 </tr>

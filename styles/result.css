@@ -1,0 +1,63 @@
+/* Styling for result-container */
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: "Poppins";
+}
+
+.result-box {
+    width: 60%;
+}
+
+.table-heading {
+    margin-bottom: 10px;
+    background-color: #000;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.table-heading h1 {
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.result-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.result-table tr {
+    border-bottom: 1px solid #000;
+}
+
+.result-table th,
+.result-table td {
+    padding: 10px;
+}
+
+.result-table td {
+    text-align: center;
+}
+
+.btn-buy {
+    background-color: #000;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-buy a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-buy:hover {
+    border: 1px solid #000;
+}

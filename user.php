@@ -1,5 +1,5 @@
 <?php 
-    include './path.php';
+    include ('./path.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
     <title>Fill in | Jani Ho?</title>
 
     <!-- Custom styling -->
+    <link rel="stylesheet" href="./styles/header-sh.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="./styles/user.css?v=<?php echo time();?>">
 
 </head>
@@ -22,14 +23,7 @@
 <body>
 
     <!-- header & nav-bar -->
-    <header>
-        <div class="logo-container">
-            <a href="<?php echo BASE_URL . '/index.php';?>"><img src="./images/logo.png" alt="logo" id="logo" /></a>
-        </div>
-        <div class="login-container">
-            <a href="<?php echo BASE_URL . '/sighup.php';?>"><img src="./images/login.svg" alt="login" id="login"></a>
-        </div>
-    </header>
+    <?php include(ROOT_PATH . '/includes/header-sh.php') ?>
 
     <!-- section: login-container -->
     <section class="login-section">
@@ -56,11 +50,11 @@
                     <input type="password" name="password" id="input-password-one" required />
                 </div>
                 <div>
-                    <label for="confirm-password">Confirm Password:</label><br/>
-                    <input type="password" name="confirm-password" id="input-password-two" required />
+                    <label for="confirmpassword">Confirm Password:</label><br/>
+                    <input type="password" name="confirmpassword" id="input-password-two" required />
                 </div>
                 <div>
-                    <input type="submit" name="create-account" id="btn-create" value="Create Account" />
+                    <input type="submit" name="createacc" id="btn-create" value="Create Account" />
                 </div>
             </form>
         </div>

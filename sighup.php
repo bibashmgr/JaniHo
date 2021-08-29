@@ -1,5 +1,5 @@
 <?php 
-    include './path.php';
+    include ('./path.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
     <title>Sigh up | Jani Ho?</title>
 
     <!-- Custom styling -->
+    <link rel="stylesheet" href="./styles/header-sh.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="./styles/sighup.css?v=<?php echo time();?>">
 
 </head>
@@ -22,14 +23,7 @@
 <body>
 
     <!-- header & nav-bar -->
-    <header>
-        <div class="logo-container">
-            <a href="<?php echo BASE_URL . '/index.php';?>"><img src="./images/logo.png" alt="logo" id="logo" /></a>
-        </div>
-        <div class="login-container">
-            <a href="<?php echo BASE_URL . '/sighup.php';?>"><img src="./images/login.svg" alt="login" id="login"></a>
-        </div>
-    </header>
+    <?php include(ROOT_PATH . '/includes/header-sh.php') ?>
 
     <!-- section: sighup-container -->
     <section class="sighup-section">
@@ -40,8 +34,8 @@
 
             <form action="./user.php" method="post" id="sighup-form">
                 <div>
-                    <label for="phone-number">Phone Number:</label><br/>
-                    <input type="tel" name="phone-number" id="input-phone" pattern="[0-9]{10}" required />
+                    <label for="phone">Phone Number:</label><br/>
+                    <input type="tel" name="phone" id="input-phone" pattern="[0-9]{10}" required />
                 </div>
                 <div>
                     <input type="submit" name="sighup" id="btn-sighup" value="SIGH UP" />
