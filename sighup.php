@@ -12,10 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login | Jani Ho?</title>
+    <title>Sigh up | Jani Ho?</title>
 
     <!-- Custom styling -->
-    <link rel="stylesheet" href="./styles/login.css?v=<?php echo time();?>">
+    <link rel="stylesheet" href="./styles/sighup.css?v=<?php echo time();?>">
 
 </head>
 
@@ -31,29 +31,25 @@
         </div>
     </header>
 
-    <!-- section: login-container -->
-    <section class="login-section">
-        <div class="login-box">
-            <div class="login-logo">
+    <!-- section: sighup-container -->
+    <section class="sighup-section">
+        <div class="sighup-box">
+            <div class="sighup-logo">
                 <img src="./images/login.svg" alt="">
             </div>
 
-            <form action="" method="post" id="login-form">
+            <form action="./user.php" method="post" id="sighup-form">
                 <div>
-                    <label for="username">User Name:</label><br/>
-                    <input type="text" name="username" id="input-username" required />
+                    <label for="phone-number">Phone Number:</label><br/>
+                    <input type="tel" name="phone-number" id="input-phone" pattern="[0-9]{10}" required />
                 </div>
                 <div>
-                    <label for="password">Password:</label><br/>
-                    <input type="password" name="password" id="input-password" required />
-                </div>
-                <div>
-                    <input type="submit" name="login" id="btn-login" value="LOGIN" />
+                    <input type="submit" name="sighup" id="btn-sighup" value="SIGH UP" />
                 </div>
             </form>
 
-            <div class="sighup-link">
-                <a href="<?php echo BASE_URL . '/sighup.php';?>">Create an account</a>
+            <div class="login-link">
+                <a href="<?php echo BASE_URL . '/login.php';?>">Already have an account</a>
             </div>
 
             <div class="admin-link">
@@ -63,7 +59,7 @@
     </section>
 
     <!-- Custom Scripting -->
-    <script src="./scripts/login.js">
+    <script src="">
     </script>
 
 </body>

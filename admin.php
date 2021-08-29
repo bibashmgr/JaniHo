@@ -12,10 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login | Jani Ho?</title>
+    <title>Admin Panel | Jani Ho?</title>
 
     <!-- Custom styling -->
-    <link rel="stylesheet" href="./styles/login.css?v=<?php echo time();?>">
+    <link rel="stylesheet" href="./styles/admin.css?v=<?php echo time();?>">
 
 </head>
 
@@ -34,8 +34,8 @@
     <!-- section: login-container -->
     <section class="login-section">
         <div class="login-box">
-            <div class="login-logo">
-                <img src="./images/login.svg" alt="">
+            <div class="login-heading">
+                <h1>ADMIN PANEL</h1>
             </div>
 
             <form action="" method="post" id="login-form">
@@ -55,15 +55,11 @@
             <div class="sighup-link">
                 <a href="<?php echo BASE_URL . '/sighup.php';?>">Create an account</a>
             </div>
-
-            <div class="admin-link">
-                <a href="<?php echo BASE_URL . '/admin.php';?>">Go to admin panel</a>
-            </div>
         </div>
     </section>
 
     <!-- Custom Scripting -->
-    <script src="./scripts/login.js">
+    <script src="">
     </script>
 
 </body>

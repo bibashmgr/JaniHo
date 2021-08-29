@@ -63,27 +63,22 @@ header {
     width: 22.5%;
     height: 65%;
     background-color: #000000;
-    position: relative;
 }
 
-.login-logo {
-    padding: 20px 30px;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    background-color: #ffffff;
-    display: inline-block;
-    position: absolute;
-    top: -225px;
-    margin: 50%;
-    transform: translate(-50%);
+.login-heading {
+    text-align: center;
+    margin-top: 40px;
 }
 
-.login-box img {
-    height: 80px;
+.login-heading h1 {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 25px;
+    color: #ffffff;
 }
 
 #login-form {
-    margin-top: 40%;
+    margin-top: 20%;
     margin-left: 30px;
     margin-right: 30px;
     font-family: "Poppins";
