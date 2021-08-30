@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* font-family */
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+
+/* styling for header */
+
+header {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo-container {
+    margin-left: 100px;
+}
+
+.login-container {
+    margin-right: 100px;
+    padding: 5px 7px 0px 7px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.login-container:hover {
+    opacity: 0.9;
+}
+
+#login {
+    display: inline-block;
+    width: 15px;
+}
+
+
+/* Styling for login-box */
+
+.sighup-section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sighup-box {
+    width: 22.5%;
+    height: 60%;
+    background-color: #000000;
+    position: relative;
+}
+
+.sighup-logo {
+    padding: 20px 30px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: -225px;
+    margin: 50%;
+    transform: translate(-50%);
+}
+
+.sighup-box img {
+    height: 80px;
+}
+
+#sighup-form {
+    margin-top: 40%;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#input-code {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7.5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+#btn-enter {
+    font-family: "Poppins";
+    font-weight: 700;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 6px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#btn-enter:hover {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}

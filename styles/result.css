@@ -4,11 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
     font-family: "Poppins";
 }
 
 .result-box {
+    margin-top: 200px;
     width: 60%;
 }
 
@@ -38,7 +38,7 @@
 
 .result-table th,
 .result-table td {
-    padding: 10px;
+    padding: 11px;
 }
 
 .result-table td {

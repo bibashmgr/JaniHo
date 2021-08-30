@@ -1,0 +1,68 @@
+/* Styling for profile-container */
+
+.profile-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.btn-logout {
+    margin-top: 20px;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 2px;
+    width: 125px;
+}
+
+.btn-logout a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.booked-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.booked-table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.booked-table tr {
+    border-bottom: 1px solid #000;
+}
+
+.booked-table th,
+.booked-table td {
+    padding: 11px;
+}
+
+.booked-table td {
+    text-align: center;
+}
+
+.btn-cancel {
+    background-color: #000;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-cancel a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-cancel:hover {
+    border: 1px solid #000;
+}

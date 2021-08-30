@@ -14,11 +14,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sigh up | Jani Ho?</title>
+    <title>Verify | Jani Ho?</title>
 
     <!-- Custom styling -->
     <link rel="stylesheet" href="./styles/header-sh.css?v=<?php echo time();?>">
-    <link rel="stylesheet" href="./styles/sighup.css?v=<?php echo time();?>">
+    <link rel="stylesheet" href="./styles/verify.css?v=<?php echo time();?>">
 
 </head>
 
@@ -34,23 +34,15 @@
                 <img src="./images/login.svg" alt="">
             </div>
 
-            <form action="./verify.php" method="post" id="sighup-form">
+            <form action="./user.php" method="post" id="sighup-form">
                 <div>
-                    <label for="phone">Phone Number:</label><br/>
-                    <input type="tel" name="phone" id="input-phone" pattern="[0-9]{10}" required />
+                    <label for="logincode">Login Code:</label><br/>
+                    <input type="tel" name="logincode" id="input-code" pattern="[0-9]{6}" required />
                 </div>
                 <div>
-                    <input type="submit" name="sighup" id="btn-sighup" value="SIGH UP" />
+                    <input type="submit" name="enter" id="btn-enter" value="Enter" />
                 </div>
             </form>
-
-            <div class="login-link">
-                <a href="<?php echo BASE_URL . '/login.php';?>">Already have an account</a>
-            </div>
-
-            <div class="admin-link">
-                <a href="<?php echo BASE_URL . '/admin.php';?>">Go to admin panel</a>
-            </div>
         </div>
     </section>
 

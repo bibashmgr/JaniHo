@@ -1,5 +1,11 @@
-<?php 
+<?php
+
+    session_start();
+
     include ('./path.php');
+    
+    include ('./controllers/loginpanel.php');
+
 ?>
 
 <!DOCTYPE html>

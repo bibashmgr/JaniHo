@@ -1,5 +1,7 @@
 <?php
 
+    session_start();    
+
     include ('./path.php');
 
     include(ROOT_PATH . '/controllers/resultpanel.php');
@@ -57,7 +59,7 @@
                         <td><?php echo $result['plate']; ?></td>
                         <td><?php echo $result['seats']; ?></td>
                         <td><?php echo $result['price']; ?></td>
-                        <td class="btn-buy"><a href="">Buy Tickets</a></td>
+                        <td class="btn-buy"><a href="./controllers/buy.php?id=<?php echo $result['id']; ?>">Buy Tickets</a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>
