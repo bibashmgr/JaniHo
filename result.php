@@ -59,7 +59,16 @@
                         <td><?php echo $result['plate']; ?></td>
                         <td><?php echo $result['seats']; ?></td>
                         <td><?php echo $result['price']; ?></td>
-                        <td class="btn-buy"><a href="./controllers/buy.php?id=<?php echo $result['id']; ?>">Buy Tickets</a></td>
+                        <td class="btn-buy">
+                            <a href="<?php 
+                                if(isset($_SESSION['username'])){
+                                    echo BASE_URL . './controllers/buy.php?id=' . $result['id'];
+                                } else {
+                                    echo BASE_URL . '/login.php';
+                                } ?>">
+                                Buy Tickets
+                            </a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </table>
